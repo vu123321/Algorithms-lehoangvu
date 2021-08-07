@@ -1,0 +1,40 @@
+Package: datetime
+EX01: lấy thông tin về thời gian timezone
+    + Ngày , tháng , năm
+    + Giờ 12-24, phút , giây
+    + Thứ ngày , tuần trong tháng, năm .
+    + Ngày đầu tiên trong tuần với Locale
+    + Kiểm tra năm hiện tại có phải năm nhuận không .
+    + Ngày đầu tiên của tuần hiện tại .
+    + Các ngày trong tuần , tháng , năm hiện tại .
+    >>. Epoch Time .
+
+Ex02:      chuyển đổi kiểu dử liệu vói SimpleDateFormat
+                + String
+                + Date
+                + Calendar
+Ex03:       Đếm xem tháng hiện tại có bao nhiêu ngày chủ nhật
+EX04: Tìm kiếm khoảng thời gian hai người yêu nhau  .
+
+Package : Localdatetime
+Ex01:   Giới thiệu Localdate và Period
+        ChronoUnit.SECONDS.between.
+
+Ex02: Chuyển đỏi kiểu dữ liệu .
+        + LocalDate
+        + LocalTime
+        + LocalDateTime
+
+ Ex03: Tìm khoảng thời gian hai người yêu nhau với LocalDateTime , Period ,Duration
+
+
+  --      Package: Utils
+DateUtlis : Converter String  with Date and Calendar .
+TimeZone : Explain timezone with zone , area , country
+            Europe / Berlin && Etc/ GMT-2 .
+ ------ Package : format
+ Ex01: NumberFormat 12312435764562389d
+        Format with number , currency .
+
+Ex02:   DecimalFormat >> # 0.
+Ex03:   Rounding  and best practice with BigDecimal .
