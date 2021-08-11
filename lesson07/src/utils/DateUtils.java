@@ -3,10 +3,7 @@ package utils;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.Objects;
+import java.util.*;
 
 public class DateUtils {
     private static final String PATTERN = "dd/MMM/yyyy  KK:mm:ss a EEEE";
@@ -47,6 +44,25 @@ public class DateUtils {
         return df.format(c.getTime());
     }
 
+    /**
+     * Convert calendar  format string with required ( dd/EE/yyyy  KK:mm:ss a EEEE ) pattern.
+     *
+     * @param c  given calendar
+     *  @param timeZone  given timezone
+     * @return formated calendar as string
+     */
+
+    public static String format(Calendar c, TimeZone timeZone){
+//        if(c == null){
+//            throw new NullPointerException();
+//        }
+        Objects.requireNonNull(c);
+
+        // pattern : dd/MM/yyyy
+        DateFormat df = new SimpleDateFormat(PATTERN);
+        df.setTimeZone(timeZone);
+        return df.format(c.getTime());
+    }
     /**
      * Covert String   to  Date with required pattern .
      * @param s given String
