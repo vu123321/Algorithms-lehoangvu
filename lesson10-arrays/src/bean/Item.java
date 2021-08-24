@@ -46,4 +46,37 @@ public class Item {
                 ", price=" + price +
                 '}';
     }
+    // TH tang dan id and Name
+//    private static int compare(Item i1 , Item i2){
+//        if (i1.getId() - i2.getId() > 0){
+//            return  1;
+//        }
+//        if (i1.getId() - i2.getId() < 0){
+//            return -1;
+//        }
+//        if (i1.getName().compareTo(i2.getName()) > 0){
+//            return 1;
+//        }
+//        return 0;
+//    }
+
+
+    // TH id and Name giam dan
+
+    // pre : this
+    // next : items
+    // position : swap
+    // negative : do nothing
+    public  int compareTo(Item item ){
+        if (this.getId() - item.getId() < 0){
+            return 1;
+        }
+        if (this.getId() - item.getId() > 0){
+            return  -1;
+        }
+        if (this.getName().compareTo(item.getName()) > 0){
+            return 1;
+        }
+        return 0;
+    }
 }

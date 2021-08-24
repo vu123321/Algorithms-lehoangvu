@@ -12,5 +12,10 @@ public class ArraysUtils {
         }
         System.out.println();
     }
-
+    public static void printf(Object[] objects){
+        for (Object object: objects
+        ) {
+            System.out.println(object+"  ");
+        }
+    }
 }
